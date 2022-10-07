@@ -1,0 +1,3 @@
+[submodule "themes/cosmos"]
+	path = themes/cosmos
+	url = git@github.com:SimpCosm/hugo-theme-cosmos.git
