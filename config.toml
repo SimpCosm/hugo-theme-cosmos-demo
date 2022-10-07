@@ -1,0 +1,32 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Demo for Hugo Cosmos'
+theme = "cosmos"
+MetaDataFormat = "yaml"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "about"
+    url = "/about/"
+    weight = -110
+
+  [[menu.main]]
+    identifier = "categories"
+    name = "categories"
+    url = "/categories/"
+    weight = -100
+
+[module]
+[[module.mounts]]
+  source = 'assets'
+  target = 'assets'
+
+[params]
+  author = "Houmin"
+  description = "Demo for Hugo Cosmos"
+  since = "2019"
+  dateFormat = "2006-01-02"
+
+
+
