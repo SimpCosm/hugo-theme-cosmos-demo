@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://houmin.site/'
 languageCode = 'en-us'
 title = 'Demo for Hugo Cosmos'
 theme = "cosmos"
@@ -6,14 +6,14 @@ MetaDataFormat = "yaml"
 
 [menu]
   [[menu.main]]
-    identifier = "about"
-    name = "about"
+    identifier = "About"
+    name = "About"
     url = "/about/"
     weight = -110
 
   [[menu.main]]
-    identifier = "categories"
-    name = "categories"
+    identifier = "Categories"
+    name = "Categories"
     url = "/categories/"
     weight = -100
 
@@ -26,6 +26,34 @@ MetaDataFormat = "yaml"
   author = "Houmin"
   description = "Demo for Hugo Cosmos"
   since = "2019"
-  dateFormat = "2006-01-02"
+  dateFormat = "January 2, 2006"
 
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
 
+  linkToMarkDown = false    # if you config contentCopyright and hugo output .md files
+  contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
+
+  enableGitInfo = true
+
+  [[params.assets]]
+    favicon = "/static/favicon/favicon.ico"
+    favicon16x16 = "/static/favicon/favicon-16x16.png"
+    favicon32x32 = "/static/favicon/favicon-32x32.png"
+    apple_touch_icon = "/static/favicon/apple_touch_icon.png"
+
+  [[params.rewards]]
+    enableWechatPay = true
+    wechatPay = "https://cosmos-1251905798.cos.ap-beijing.myqcloud.com/theme/wechatpay.png"
+    enableAliPay = true
+    aliPay = "https://cosmos-1251905798.cos.ap-beijing.myqcloud.com/theme/alipay.jpg"
+
+  [params.gitInfo]
+    gitRepo = "https://github.com/SimpCosm/hugo-theme-cosmos-demo"
+    showCommitMessage = true
+
+  [params.utteranc]
+    enable = true
+    repo = "SimpCosm/SimpCosm.github.io"
+    issueTerm = "title"
+    theme = "github-light"
