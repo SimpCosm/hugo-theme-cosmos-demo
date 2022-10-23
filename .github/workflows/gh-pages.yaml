@@ -61,7 +61,8 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo \
-            --buildDrafts --gc --verbose
+            --buildDrafts --gc --verbose \
+            --baseURL $BASE_URL
       - name: Install coscmd
         run: sudo pip install coscmd
       - name: Configure coscmd
