@@ -61,15 +61,7 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo \
-            --buildDrafts --gc --verbose \
-            --baseURL ${{ steps.pages.outputs.base_url }}
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v2
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./public
+            --buildDrafts --gc --verbose
       - name: Install coscmd
         run: sudo pip install coscmd
       - name: Configure coscmd
