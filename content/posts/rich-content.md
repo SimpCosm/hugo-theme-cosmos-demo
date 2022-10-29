@@ -58,5 +58,14 @@ music auto="https://y.qq.com/n/ryqq/song/004ENQPZ0dHaqy.html"
 
 ## Bilibili
 
-
 {{< bilibili BV1MN4y177PB >}}
+
+## Gist
+
+{{< gist spf13 7896402 >}}
+
+## Douban
+
+{{< douban type="movie" id="35554292" >}}
+
+{{< douban type="book" id="1084336" >}}
