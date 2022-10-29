@@ -62,8 +62,7 @@ jobs:
           BASE_URL: ${{ secrets.BASE_URL }}
         run: |
           hugo \
-            --buildDrafts --gc --verbose \
-            --baseURL $BASE_URL
+            --buildDrafts --gc --verbose --enableGitInfo
       - name: Install coscmd
         run: sudo pip install coscmd
       - name: Configure coscmd
