@@ -9,6 +9,7 @@ ShowToc: true
 
 Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes) for rich content, along with a [Privacy Config](https://gohugo.io/about/hugo-and-gdpr/) and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.
 <!--more-->
+
 ---
 
 ## YouTube Privacy Enhanced Shortcode
@@ -24,8 +25,6 @@ Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-manageme
 {{< twitter_simple 1085870671291310081 >}}
 
 <br>
-
-{{< tweet user="SanDiegoZoo" id="1453110110599868418" >}}
 
 ---
 
@@ -49,7 +48,7 @@ music server="netease" type="playlist" id="60198"
 
 QQ 音乐
 
-```
+```bash
 music auto="https://y.qq.com/n/ryqq/song/004ENQPZ0dHaqy.html"
 ```
 
@@ -63,6 +62,10 @@ music auto="https://y.qq.com/n/ryqq/song/004ENQPZ0dHaqy.html"
 ## Gist
 
 {{< gist spf13 7896402 >}}
+
+## Github Code
+
+{{< ghcode url="https://github.com/gohugoio/hugo/blob/77fc74a5b20f50298ac4a1cd88e436932fc2226f/markup/highlight/highlight.go#L60-L65" >}}
 
 ## Douban
 

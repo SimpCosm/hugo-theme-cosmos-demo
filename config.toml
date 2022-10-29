@@ -17,6 +17,15 @@ MetaDataFormat = "yaml"
     url = "/categories/"
     weight = -100
 
+[markup]
+  [markup.highlight]
+    style = 'solarized-dark'
+    codeFences = true
+    guessSyntax = false
+    lineNoStart =1
+    lineNos = true
+    lineNumbersInTable = true
+
 [module]
 [[module.mounts]]
   source = 'assets'
@@ -56,4 +65,4 @@ MetaDataFormat = "yaml"
     enable = true
     repo = "SimpCosm/SimpCosm.github.io"
     issueTerm = "title"
-    theme = "github-light"
+    theme = "github-dark"
