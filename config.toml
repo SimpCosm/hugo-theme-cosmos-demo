@@ -1,4 +1,4 @@
-baseURL = 'https://houmin.site/'
+baseURL = 'https://blog-1251905798.cos.ap-nanjing.myqcloud.com'
 languageCode = 'en-us'
 title = 'Demo for Hugo Cosmos'
 theme = "cosmos"
