@@ -1,4 +1,4 @@
-name: Deploy Hugo Cosmos Demo to Pages
+name: Deploy Hugo Cosmos Demo to COS
 
 on:
   push:
@@ -8,6 +8,7 @@ on:
       - "README.md"
     branches:
       - master
+      - main
   workflow_dispatch:
     # manual run
     inputs:
@@ -59,7 +60,7 @@ jobs:
           # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
-          BASE_URL: ${{ secrets.BASE_URL }}
+          HUGO_BASEURL: ${{ secrets.BASE_URL }}
         run: |
           hugo \
             --buildDrafts --gc --verbose --enableGitInfo

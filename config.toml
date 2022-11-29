@@ -1,4 +1,3 @@
-baseURL = 'https://site-1251905798.cos-website.ap-beijing.myqcloud.com'
 languageCode = 'en-us'
 title = 'Cosmos'
 theme = "cosmos"
@@ -58,7 +57,7 @@ MetaDataFormat = "yaml"
 
   [params.giscuss]
     enable = true
-    repo = "SimpCosm/retro"
-    repoId = "R_kgDOIbNe3g"
+    repo = "SimpCosm/hugo-theme-cosmos-demo"
+    repoId = "R_kgDOIJ9C6g"
     category = "Announcements"
-    categoryId = "DIC_kwDOIbNe3s4CShyB"
+    categoryId = "DIC_kwDOIJ9C6s4CS0YL"
