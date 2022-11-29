@@ -86,6 +86,14 @@ music auto="https://y.qq.com/n/ryqq/song/004ENQPZ0dHaqy.html"
 
 ## Notice
 
+```go
+// notice: need add < > 
+{{ notice warning }}
+This is a warning notice. Be warned!
+{{ /notice }}
+```
+<br>
+
 {{< notice warning >}}
 This is a warning notice. Be warned!
 {{< /notice >}}
@@ -103,3 +111,23 @@ This is a note notice. Be warned!
 {{< notice info >}}
 This is a info notice. Be warned!
 {{< /notice >}}
+
+## Tabs
+
+{{< tabs tabTotal="3" tabRightAlign="2">}}
+{{< tab tabName="Tab 1" >}}
+
+**Tab 1 Content**
+
+{{< /tab >}}
+{{< tab tabName="Tab 2" >}}
+
+**Tab 2 Content**
+
+{{< /tab >}}
+{{< tab tabName="Tab 3">}}
+
+**Tab 3 Content**
+
+{{< /tab >}}
+{{< /tabs >}}
