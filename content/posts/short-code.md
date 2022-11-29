@@ -86,12 +86,23 @@ music auto="https://y.qq.com/n/ryqq/song/004ENQPZ0dHaqy.html"
 
 ## Notice
 
+{{< notice note >}}
+This is a notice of the type `note`. The notice can span multiple lines, even multiple paragraphs.
+
+For instance, this is another paragraph. Naturally **Markdown** can be used, for instance to embed links.
+
+> This is a quote example in notice.
+
+Even code can be used.
 ```go
-// notice: need add < > 
-{{ notice warning }}
-This is a warning notice. Be warned!
-{{ /notice }}
+package main
+import "fmt"
+func main() {
+	fmt.Println("Hello World!")
+}
 ```
+{{< /notice >}}
+
 <br>
 
 {{< notice warning >}}
@@ -104,9 +115,6 @@ This is a warning notice. Be warned!
 This is a very good tip.
 {{< /notice >}}
 
-{{< notice note >}}
-This is a note notice. Be warned!
-{{< /notice >}}
 
 {{< notice info >}}
 This is a info notice. Be warned!
