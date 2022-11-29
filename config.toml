@@ -1,6 +1,6 @@
 baseURL = 'https://site-1251905798.cos-website.ap-beijing.myqcloud.com'
 languageCode = 'en-us'
-title = 'Demo for Hugo Cosmos'
+title = 'Cosmos'
 theme = "cosmos"
 MetaDataFormat = "yaml"
 
@@ -8,14 +8,9 @@ MetaDataFormat = "yaml"
   [[menu.main]]
     identifier = "About"
     name = "About"
+    pre = "<i class='fa fa-heart'></i>"
     url = "/about/"
     weight = -110
-
-  [[menu.main]]
-    identifier = "Categories"
-    name = "Categories"
-    url = "/categories/"
-    weight = -100
 
 [markup]
   [markup.highlight]
@@ -61,8 +56,9 @@ MetaDataFormat = "yaml"
     gitRepo = "https://github.com/SimpCosm/hugo-theme-cosmos-demo"
     showCommitMessage = true
 
-  [params.utteranc]
+  [params.giscuss]
     enable = true
-    repo = "SimpCosm/SimpCosm.github.io"
-    issueTerm = "title"
-    theme = "github-dark"
+    repo = "SimpCosm/retro"
+    repoId = "R_kgDOIbNe3g"
+    category = "Announcements"
+    categoryId = "DIC_kwDOIbNe3s4CShyB"
