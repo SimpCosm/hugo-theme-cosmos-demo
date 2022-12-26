@@ -25,9 +25,9 @@ Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-manageme
 {{< bilibili BV1MN4y177PB >}}
 
 
-### Vimeo Simple Shortcode
+### Vimeo
 
-{{< vimeo_simple 48912912 >}}
+{{< vimeo 48912912 >}}
 
 ---
 
@@ -74,7 +74,6 @@ music auto="https://y.qq.com/n/ryqq/song/004ENQPZ0dHaqy.html"
 
 <br>
 
-
 ---
 
 ### Douban
@@ -117,25 +116,23 @@ This is a very good tip.
 
 
 {{< notice info >}}
-This is a info notice. Be warned!
+This is a info notice.
 {{< /notice >}}
 
 ## Tabs
 
-{{< tabs tabTotal="3" tabRightAlign="2">}}
+{{< tabs tabTotal="3">}}
+
 {{< tab tabName="Tab 1" >}}
-
-**Tab 1 Content**
-
+Tab 1 Content
 {{< /tab >}}
+
 {{< tab tabName="Tab 2" >}}
-
-**Tab 2 Content**
-
+Tab 2 Content
 {{< /tab >}}
+
 {{< tab tabName="Tab 3">}}
-
-**Tab 3 Content**
-
+Tab 3 Content
 {{< /tab >}}
+
 {{< /tabs >}}
