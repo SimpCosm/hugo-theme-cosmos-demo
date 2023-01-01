@@ -17,12 +17,6 @@ MetaDataFormat = "yaml"
     url = "/archives/"
     weight = -80
   [[menu.main]]
-    identifier = "Categories"
-    name = "Categories"
-    pre = "<i class='fa fa-heart'></i>"
-    url = "/categories/"
-    weight = -50
-  [[menu.main]]
     identifier = "Tags"
     name = "Tags"
     pre = "<i class='fa fa-heart'></i>"
@@ -34,6 +28,13 @@ MetaDataFormat = "yaml"
     pre = "<i class='fa fa-heart'></i>"
     url = "/about/"
     weight = 10
+  [[menu.main]]
+    identifier = "Documetation"
+    name = "Documetation"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "/docs/"
+    weight = 10
+
 [markup]
   [markup.highlight]
     style = 'solarized-dark'
