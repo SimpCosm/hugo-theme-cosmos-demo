@@ -5,12 +5,35 @@ MetaDataFormat = "yaml"
 
 [menu]
   [[menu.main]]
+    identifier = "Home"
+    name = "Home"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "/"
+    weight = -100
+  [[menu.main]]
+    identifier = "Archives"
+    name = "Archives"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "/archives/"
+    weight = -80
+  [[menu.main]]
+    identifier = "Categories"
+    name = "Categories"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "/categories/"
+    weight = -50
+  [[menu.main]]
+    identifier = "Tags"
+    name = "Tags"
+    pre = "<i class='fa fa-heart'></i>"
+    url = "/tags/"
+    weight = -30
+  [[menu.main]]
     identifier = "About"
     name = "About"
     pre = "<i class='fa fa-heart'></i>"
     url = "/about/"
-    weight = -110
-
+    weight = 10
 [markup]
   [markup.highlight]
     style = 'solarized-dark'
@@ -21,11 +44,13 @@ MetaDataFormat = "yaml"
     lineNumbersInTable = true
 
 [module]
-[[module.mounts]]
-  source = 'assets'
-  target = 'assets'
+  [module.mounts]
+    source = 'assets'
+    target = 'assets'
 
 [params]
+  bookSection = "docs"
+
   author = "Houmin"
   description = "Demo for Hugo Cosmos"
   since = "2019"
@@ -38,17 +63,25 @@ MetaDataFormat = "yaml"
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
   enableGitInfo = true
+  enableHomeProfile = false
 
-  [[params.assets]]
+  toc = true
+  katex = true
+  meting = true
+  photoSwipe = true
+
+  [params.publicCDN]
+    enable = true
+
+  [params.assets]
     favicon = "/static/favicon/favicon.ico"
     favicon16x16 = "/static/favicon/favicon-16x16.png"
     favicon32x32 = "/static/favicon/favicon-32x32.png"
     apple_touch_icon = "/static/favicon/apple_touch_icon.png"
 
-  [[params.rewards]]
-    enableWechatPay = true
+  [params.reward]
+    enable = true
     wechatPay = "https://cosmos-1251905798.cos.ap-beijing.myqcloud.com/theme/wechatpay.png"
-    enableAliPay = true
     aliPay = "https://cosmos-1251905798.cos.ap-beijing.myqcloud.com/theme/alipay.jpg"
 
   [params.gitInfo]
@@ -61,3 +94,4 @@ MetaDataFormat = "yaml"
     repoId = "R_kgDOIJ9C6g"
     category = "Announcements"
     categoryId = "DIC_kwDOIJ9C6s4CS0YL"
+    theme = "light"

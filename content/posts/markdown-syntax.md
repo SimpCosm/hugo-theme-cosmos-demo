@@ -37,6 +37,10 @@ Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptio
 
 Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
 
+## Images
+
+![SunSet](https://cosmos-1251905798.cos.ap-beijing.myqcloud.com/blog/2020-10-08_sunset.png)
+
 ## Blockquotes
 
 The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
@@ -73,7 +77,7 @@ Tables aren't part of the core Markdown spec, but Hugo supports them out-of-the-
 
 #### Inline Code
 
-`This is Inline Code`
+This is `Inline Code`
 
 #### Only `pre`
 

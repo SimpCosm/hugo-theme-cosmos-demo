@@ -85,8 +85,8 @@ music auto="https://y.qq.com/n/ryqq/song/004ENQPZ0dHaqy.html"
 
 ## Notice
 
-{{< notice note >}}
-This is a notice of the type `note`. The notice can span multiple lines, even multiple paragraphs.
+{{< notice >}}
+This is a notice of the type `info`. The notice can span multiple lines, even multiple paragraphs.
 
 For instance, this is another paragraph. Naturally **Markdown** can be used, for instance to embed links.
 
@@ -104,19 +104,22 @@ func main() {
 
 <br>
 
+{{< notice tip >}}
+This is a very good tip.
+{{< /notice >}}
+
+{{< notice info >}}
+This is a info notice.
+{{< /notice >}}
+
 {{< notice warning >}}
 This is a warning notice. Be warned!
 {{< /notice >}}
 
 <br>
 
-{{< notice tip >}}
-This is a very good tip.
-{{< /notice >}}
-
-
-{{< notice info >}}
-This is a info notice.
+{{< notice important >}}
+This is a important notice.
 {{< /notice >}}
 
 ## Tabs
