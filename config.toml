@@ -28,12 +28,6 @@ MetaDataFormat = "yaml"
     pre = "<i class='fa fa-heart'></i>"
     url = "/about/"
     weight = 10
-  [[menu.main]]
-    identifier = "Documetation"
-    name = "Documetation"
-    pre = "<i class='fa fa-heart'></i>"
-    url = "/docs/"
-    weight = 10
 
 [markup]
   [markup.highlight]
@@ -65,11 +59,16 @@ MetaDataFormat = "yaml"
 
   enableGitInfo = true
   enableHomeProfile = false
+  mainSections = ["posts"]
 
   toc = true
   katex = true
+  douban = true
   meting = true
   photoSwipe = true
+
+  [params.markmap]
+    enable = true
 
   [params.publicCDN]
     enable = true
