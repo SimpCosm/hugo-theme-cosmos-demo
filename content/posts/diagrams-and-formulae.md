@@ -89,6 +89,8 @@ sequenceDiagram
 
 ### Class Diagram
 
+{{< columns >}}
+````tpl
 ```mermaid
 classDiagram
   direction RL
@@ -106,8 +108,48 @@ classDiagram
   Student "1" --o "1" IdCard : carries
   Student "1" --o "1" Bike : rides
 ```
+````
+
+<--->
+```mermaid
+classDiagram
+  direction RL
+  class Student {
+    -idCard : IdCard
+  }
+  class IdCard{
+    -id : int
+    -name : string
+  }
+  class Bike{
+    -id : int
+    -name : string
+  }
+  Student "1" --o "1" IdCard : carries
+  Student "1" --o "1" Bike : rides
+```
+{{< /columns >}}
 
 ### State Diagram
+
+{{< columns >}}
+
+````tpl
+```mermaid
+stateDiagram
+    direction LR
+    [*] --> A
+    A --> B
+    B --> C
+    state B {
+      direction LR
+      a --> b
+    }
+    B --> D
+```
+````
+
+<--->
 
 ```mermaid
 stateDiagram
@@ -122,7 +164,30 @@ stateDiagram
     B --> D
 ```
 
+{{< /columns >}}
+
 ### Entity Relationship Diagram
+
+{{< columns >}}
+
+````tpl
+```mermaid
+erDiagram
+    CAR ||--o{ NAMED-DRIVER : allows
+    CAR {
+        string registrationNumber
+        string make
+        string model
+    }
+    PERSON ||--o{ NAMED-DRIVER : is
+    PERSON {
+        string firstName
+        string lastName
+        int age
+    }
+```
+````
+<--->
 
 ```mermaid
 erDiagram
@@ -139,22 +204,24 @@ erDiagram
         int age
     }
 ```
+{{< /columns >}}
 
-### User Journey
-
-```mermaid
-journey
-    title My working day
-    section Go to work
-      Make tea: 5: Me
-      Go upstairs: 3: Me
-      Do work: 1: Me, Cat
-    section Go home
-      Go downstairs: 5: Me
-      Sit down: 5: Me
-```
 
 ### Gantt
+
+````tpl
+```mermaid
+gantt
+    title A Gantt Diagram
+    dateFormat  YYYY-MM-DD
+    section Section
+    A task           :a1, 2014-01-01, 30d
+    Another task     :after a1  , 20d
+    section Another
+    Task in sec      :2014-01-12  , 12d
+    another task      : 24d
+```
+````
 
 ```mermaid
 gantt
@@ -167,7 +234,24 @@ gantt
     Task in sec      :2014-01-12  , 12d
     another task      : 24d
 ```
+
 ### Pie Chart
+
+{{< columns >}}
+
+<!-- prettier-ignore -->
+````tpl
+```mermaid
+pie showData
+    title Key elements in Product X
+    "Calcium" : 42.96
+    "Potassium" : 50.05
+    "Magnesium" : 10.01
+    "Iron" :  5
+```
+````
+
+<--->
 
 ```mermaid
 pie showData
@@ -177,6 +261,7 @@ pie showData
     "Magnesium" : 10.01
     "Iron" :  5
 ```
+{{< /columns >}}
 
 ### Gitgraph Diagram
 
