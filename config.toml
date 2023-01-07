@@ -73,6 +73,10 @@ MetaDataFormat = "yaml"
   [params.mermaid]
     enable = true
 
+  [params.echarts]
+    enable = true
+    map = true
+
   [params.publicCDN]
     enable = true
 
