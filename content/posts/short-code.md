@@ -164,3 +164,25 @@ stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
 protulit, sed sed aere valvis inhaesuro Pallas animam: qui _quid_, ignes.
 Miseratus fonte Ditis conubia.
 {{< /columns >}}
+
+## Details
+
+{{< details "Details Summary Example: click here to expand" open >}}
+## Markdown content
+Lorem markdownum insigne...
+{{< /details >}}
+
+Below is code example, you can click summary to expand.
+
+{{< details "Code Example">}}
+```cpp
+// 'Hello World!' program
+
+#include <iostream>
+
+int main(){
+  std::cout << "Hello World!" << std::endl;
+  return 0;
+}
+```
+{{< /details >}}
