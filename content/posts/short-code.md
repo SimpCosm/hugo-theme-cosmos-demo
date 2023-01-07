@@ -51,6 +51,8 @@ Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-manageme
 {{</* music server="netease" id="5250122 */>}}
 ```
 
+This is netease music example:
+
 {{< music server="netease" id="5250122" >}}
 
 ```html
@@ -159,21 +161,43 @@ This is a important notice.
 
 ## Tabs
 
-{{< tabs tabTotal="3">}}
+{{< tabs "uniqueid" >}}
+{{< tab "MacOS" >}}
+# MacOS
 
-{{< tab tabName="Tab 1" >}}
-Tab 1 Content
+This is tab **MacOS** content.
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
+protulit, sed sed aere valvis inhaesuro Pallas animam: qui _quid_, ignes.
+Miseratus fonte Ditis conubia.
 {{< /tab >}}
 
-{{< tab tabName="Tab 2" >}}
-Tab 2 Content
+{{< tab "Linux" >}}
+
+# Linux
+
+This is tab **Linux** content.
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
+protulit, sed sed aere valvis inhaesuro Pallas animam: qui _quid_, ignes.
+Miseratus fonte Ditis conubia.
 {{< /tab >}}
 
-{{< tab tabName="Tab 3">}}
-Tab 3 Content
-{{< /tab >}}
+{{< tab "Windows" >}}
 
+# Windows
+
+This is tab **Windows** content.
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter! Oculis non ritibus Telethusa
+protulit, sed sed aere valvis inhaesuro Pallas animam: qui _quid_, ignes.
+Miseratus fonte Ditis conubia.
+{{< /tab >}}
 {{< /tabs >}}
+
 
 ## Columns
 
