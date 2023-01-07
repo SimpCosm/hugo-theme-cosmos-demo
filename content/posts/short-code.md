@@ -16,16 +16,28 @@ Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-manageme
 
 ### YouTube
 
+```html
+{{</* youtube ZJthWmvUzzc */>}}
+```
+
 {{< youtube ZJthWmvUzzc >}}
 
 <br>
 
 ### Bilibili
 
+```html
+{{</* bilibili BV1MN4y177PB */>}}
+```
+
 {{< bilibili BV1MN4y177PB >}}
 
 
 ### Vimeo
+
+```html
+{{</* vimeo 48912912 */>}}
+```
 
 {{< vimeo 48912912 >}}
 
@@ -35,22 +47,22 @@ Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-manageme
 
 ### NetEase
 
-```bash
-music server="netease" id="5250122"
+```html
+{{</* music server="netease" id="5250122 */>}}
 ```
 
 {{< music server="netease" id="5250122" >}}
 
-```bash
-music server="netease" type="playlist" id="60198"
+```html
+{{</* music server="netease" type="playlist" id="60198" */>}}
 ```
 
 {{< music server="netease" type="playlist" id="60198" >}}
 
 ### QQ Music
 
-```bash
-music auto="https://y.qq.com/n/ryqq/song/004ENQPZ0dHaqy.html"
+```html
+{{</* music auto="https://y.qq.com/n/ryqq/song/004ENQPZ0dHaqy.html" */>}}
 ```
 
 {{< music auto="https://y.qq.com/n/ryqq/song/004ENQPZ0dHaqy.html" >}}
@@ -60,15 +72,27 @@ music auto="https://y.qq.com/n/ryqq/song/004ENQPZ0dHaqy.html"
 
 ### Gist
 
+```html
+{{</* gist spf13 7896402 */>}}
+```
+
 {{< gist spf13 7896402 >}}
 
 ### Github Code
+
+```html
+{{</* ghcode url="https://github.com/gohugoio/hugo/blob/77fc74a5b20f50298ac4a1cd88e436932fc2226f/markup/highlight/highlight.go#L60-L65" */>}}
+```
 
 {{< ghcode url="https://github.com/gohugoio/hugo/blob/77fc74a5b20f50298ac4a1cd88e436932fc2226f/markup/highlight/highlight.go#L60-L65" >}}
 
 ## Social Media
 
 ### Twitter
+
+```html
+{{</* twitter 1085870671291310081 */>}}
+```
 
 {{< twitter_simple 1085870671291310081 >}}
 
@@ -78,12 +102,23 @@ music auto="https://y.qq.com/n/ryqq/song/004ENQPZ0dHaqy.html"
 
 ### Douban
 
+```html
+{{</* douban type="movie" id="35554292" */>}}
+{{</* douban type="book" id="1084336" */>}}
+```
+
 {{< douban type="movie" id="35554292" >}}
 
 {{< douban type="book" id="1084336" >}}
 
 
 ## Notice
+
+```html
+{{</* notice tip */>}}
+This is a notice short code format example.
+{{</* /notice */>}}
+```
 
 {{< notice >}}
 This is a notice of the type `info`. The notice can span multiple lines, even multiple paragraphs.
@@ -142,6 +177,27 @@ Tab 3 Content
 
 ## Columns
 
+Columns help organize shorter pieces of content horizontally for readability.
+
+```html
+{{</* columns */>}} <!-- begin columns block -->
+# Left Content
+Lorem markdownum insigne...
+
+<---> <!-- magic separator, between columns -->
+
+# Mid Content
+Lorem markdownum insigne...
+
+<---> <!-- magic separator, between columns -->
+
+# Right Content
+Lorem markdownum insigne...
+{{</* /columns */>}}
+```
+
+Below is a simple example.
+
 {{< columns >}}
 ## Left Content
 
@@ -166,6 +222,13 @@ Miseratus fonte Ditis conubia.
 {{< /columns >}}
 
 ## Details
+
+```html
+{{</* details title="Title" open=true */>}} <!-- begin columns block -->
+## Markdown content
+Lorem markdownum insigne...
+{{</* /details */>}}
+```
 
 {{< details "Details Summary Example: click here to expand" open >}}
 ## Markdown content
