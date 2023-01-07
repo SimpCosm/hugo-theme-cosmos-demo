@@ -70,6 +70,9 @@ MetaDataFormat = "yaml"
   [params.markmap]
     enable = true
 
+  [params.mermaid]
+    enable = true
+
   [params.publicCDN]
     enable = true
 
