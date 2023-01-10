@@ -10,7 +10,10 @@ The theme is inspired by a lot of themes in hugo community:
 - [Relearn theme](https://github.com/matcornic/hugo-theme-relearn)
 - [PaperMod theme](https://github.com/adityatelange/hugo-PaperMod)
 - [Jane theme](https://github.com/xianmin/hugo-theme-jane)
-  {{< /notice >}}
+- [Docsy theme](https://github.com/google/docsy)
+- [Book theme](https://github.com/alex-shpak/hugo-book)
+- [Geekdoc theme](https://github.com/thegeeklab/hugo-geekdoc)
+{{< /notice >}}
 
 ## Features
 
@@ -31,10 +34,13 @@ See [What's New](./) within the latest update.
 - [x] Tip/Info/Warning/Important notice short code
 - [x] Tabs short code
 - [x] Douban/Bilibi/QQ Music/NetEase Music short code
-- [ ] Expand short code
+- [x] Details short code to expand
+- [x] Columns short code
 - [ ] Attachment files short code
 - [ ] File inclusion short code
-- [ ] Mermaid diagrams short code for flowcharts, sequences, gantts, pie, etc.
+- [x] Mermaid diagrams short code for flowcharts, sequences, gantts, pie, etc.
+- [x] ECharts diagrams short code
+- [x] Markmap short code for mindmap in markdown
 - [ ] Buttons short code
 - [ ] Font Awesome icons short code
 - [ ] Usable offline, no external dependencies

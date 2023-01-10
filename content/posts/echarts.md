@@ -274,7 +274,7 @@ var option = {
         text: ["高", "低"],
         pieces: [{
             gt: 10000,
-            label: "&gt; 10000",
+            label: "> 10000",
             color: "#7f1100"
         }, {
             gte: 1000,
